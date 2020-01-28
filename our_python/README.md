@@ -5,12 +5,12 @@
 **Assignment: Create a client in Python to connect to a universal server.**
 
 ## Creating a Socket
-Call the socket() function in the server file -- which returns a socket that is not in the state of accepting connections, and is not bound to an address or port.
-Then, take in an address and a port from command line arguments entered by the user.
-For the client file, the user will run the file with 2 command line arguments: IP address and port number.
-For the server file, the user will run the file with 1 command line argument: just the port number.
-Now, with the bind() function, the address and port are paired and the socket is bound to them at the server.
-The server socket needs to move to a new state where it waits for client connections.
+- Call the socket() function in the server file -- which returns a socket that is not in the state of accepting connections, and is not bound to an address or port.
+- Then, take in an address and a port from command line arguments entered by the user.
+- For the client file, the user will run the file with 2 command line arguments: IP address and port number.
+- For the server file, the user will run the file with 1 command line argument: just the port number.
+- Now, with the bind() function, the address and port are paired and the socket is bound to them at the server.
+- The server socket needs to move to a new state where it waits for client connections.
 
 ## Connecting to a Server
 Now, the server socket enters the wait state with the listen() function, where the server waits for any incoming client connections.
