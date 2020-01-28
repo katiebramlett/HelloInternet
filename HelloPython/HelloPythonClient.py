@@ -15,14 +15,14 @@ s.connect((IPaddr, portNum))
 msg = "Hello in Python\n"
 
 # Print message to client
-print("Sending: ", msg)
+print("Sending message: ", msg)
 
 # Send message to server
-s.sendall(msg.encode())
+s.send(msg.encode())
 
 # Receive and print
 data = s.recv(1024)
-print("Received: ", data.decode())
+print("Received message: ", data.decode())
 
 # Close socket
 s.close()
