@@ -1,8 +1,8 @@
-### HelloInternet in Python
+# HelloInternet in Python
 ## Katie Bramlett and Sreya Nalla
-# 1/28/20
+### 1/28/20
 
-*Assignment: Create a client in Python to connect to a universal server.*
+**Assignment: Create a client in Python to connect to a universal server.**
 
 ## Creating a Socket
 Call the socket() function in the server file -- which returns a socket that is not in the state of accepting connections, and is not bound to an address or port.
