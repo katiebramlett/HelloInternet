@@ -4,7 +4,7 @@ import sys
 
 # Set IP address and port number as command line arguments
 IPaddr = str(sys.argv[1]); 
-portNum = str(sys.argv[2]);
+portNum = int(sys.argv[2]);
 
 # S = socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

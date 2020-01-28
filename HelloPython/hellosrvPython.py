@@ -5,7 +5,7 @@ import socket
 import sys
 
 HOST = "0.0.0.0"  # Listen on all interfaces
-PORT = str(sys.argv[1]) # Port num is a command line argument
+PORT = int(sys.argv[1]) # Port num is a command line argument
 msg = "Goodbye in Python"
 
 print("Starting Python hellosrv")
