@@ -2,7 +2,11 @@
 
 import socket
 
+<<<<<<< HEAD
 HOST = "127.0.1.0"  # Listen on all interfaces
+=======
+HOST = "127.0.0.1"  # Listen on all interfaces
+>>>>>>> ed0e8fc6a1ddc3d8e2b192b914f9a10e1d6c582f
 PORT = 8080
 msg = "Goodbye in Python"
 
