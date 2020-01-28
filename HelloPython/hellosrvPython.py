@@ -2,7 +2,7 @@
 
 import socket
 
-HOST = "localhost"  # Listen on all interfaces
+HOST = "0.0.0.0"  # Listen on all interfaces
 PORT = 8080
 msg = "Goodbye in Python"
 

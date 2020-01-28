@@ -9,7 +9,7 @@ portNum = 8080
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect to IP address at port number
-s.connect((IPaddr, portNum))
+s.connect(IPaddr, portNum)
 
 # Declare message to send
 msg = "Hello in Python\n"
