@@ -11,6 +11,6 @@ port = 8080
 s.connect(('0.0.0.0', port)) 
         
 # receive data from the server 
-print s.recv(1024) 
+print (s.recv(1024)) 
 # close the connection 
 s.close()
