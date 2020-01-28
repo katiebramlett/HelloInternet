@@ -8,7 +8,7 @@ s = socket.socket()
 port = 8080                
       
 # connect to the server on local computer 
-s.connect(('0.0.0.0', port)) 
+s.connect(("localhost", port)) 
         
 # receive data from the server 
 print (s.recv(1024)) 
