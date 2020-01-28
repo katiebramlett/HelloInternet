@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
+# SOCKET SERVER
 import socket
+import sys
 
 HOST = "0.0.0.0"  # Listen on all interfaces
-PORT = 8080
+PORT = str(sys.argv[1]) # Port num is a command line argument
 msg = "Goodbye in Python"
 
 print("Starting Python hellosrv")
