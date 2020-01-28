@@ -2,7 +2,7 @@
 
 import socket
 
-HOST = "0.0.0.0"  # Listen on all interfaces
+HOST = "127.0.1.0"  # Listen on all interfaces
 PORT = 8080
 msg = "Goodbye in Python"
 
@@ -10,7 +10,7 @@ print("Starting Python hellosrv")
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    s.bind(('', PORT))
+    s.bind((HOST, PORT))
     s.listen()
     while True:
         conn, addr = s.accept()
