@@ -1,16 +1,28 @@
-# Import socket module 
-import socket                
-  
-# Create a socket object 
-s = socket.socket()          
-    
-# Define the port on which you want to connect 
-port = 8080                
-      
-# connect to the server on local computer 
-s.connect(('127.0.0.1', port)) 
-        
-# receive data from the server 
-print (s.recv(1024)) 
-# close the connection 
+# SOCKET CLIENT
+import socket
+
+# Set IP address and port number
+IPaddr = "localhost" 
+portNum = 8080
+
+# S = socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Connect to IP address at port number
+s.connect((IPaddr, portNum))
+
+# Declare message to send
+msg = "Hello in Python\n"
+
+# Print message to client
+print("Sending: ", msg)
+
+# Send message to server
+s.sendall(msg.encode())
+
+# Receive and print
+data = s.recv(1024)
+print("Received: ", data.decode())
+
+# Close socket
 s.close()
