@@ -2,7 +2,7 @@
 import socket
 
 # Set IP address and port number
-IPaddr = "127.0.0.1"; 
+IPaddr = "0.0.0.0"; 
 portNum = 8080
 
 # S = socket
